@@ -1,0 +1,32 @@
+docker version
+docker run hello-world
+
+docker images
+  list of avalable images in local
+
+docker pull ubuntu:20.04
+  pulling image
+
+docker run ubuntu:20.04 echo "run!"
+  run container then echo run!
+
+docker run -it ubuntu:20.04 bash
+  -it : intractive terminal
+
+docker ps
+  running container 
+docker ps -a 
+  all container even stopped one
+
+docker start -i [container id]
+  start stopped container 
+docker stop [container id]
+docker rm [container id]
+  remove container 
+docker container prune 
+  prune diactive containers
+
+docker rmi ubuntu:20.04
+  remove image
+docker rmi prune 
+  remove deactive images
