@@ -1,0 +1,9 @@
+.dockerignore contain :
+  Dockerfile
+  .dockerignore
+  .git
+  *.md
+    ...
+
+  
+    
