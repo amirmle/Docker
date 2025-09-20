@@ -1,8 +1,15 @@
+
 docker build -t myimage .
   myimage → tag assign to the image
   -t myimage → tag for the image
   . → build context (all files in current directory are available to COPY)
-  
+
+defaul docker file name is Dockerfile
+for diffrent names must use -f tag to decleare docker file 
+docker build -f Dockerfile.dev -t myapp-dev .
+
+inside of docker file:
+
 FROM python:3.11-slim
   choose a base docker image 
   there can be only one base image (unless using multi-stage builds)
