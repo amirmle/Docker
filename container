@@ -53,6 +53,21 @@ CMD ["python", "app.py"]
     CMD ["/app/start.sh"]
 
 
+layers:
+why use layers?
+caching: if a command does not change, docker reuses that layer from cache onstead of rebuilding it → faster builds
+sharing: if multiple images use the same base image, docker download and store it only once 
+immutability : layers are read-only; only the top container layer is writable during runtime
+example:
+  Layer 6: CMD instruction (metadata only)
+  Layer 5: Project source code
+  Layer 4: Installed Python packages
+  Layer 3: requirements.txt
+  Layer 2: /app working directory
+  Layer 1: Python base image
+  ─────────────
+  Kernel: from host (shared, not inside image)
+
 
 
 RUN → executed at build time (to bake things into the image).
