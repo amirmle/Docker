@@ -12,6 +12,7 @@ docker run ubuntu:20.04 echo "run!"
 
 docker run -it ubuntu:20.04 bash
   -it : intractive terminal
+  -p 8000:8000 : connect container port to pc port
 
 docker ps
   running container 
@@ -30,3 +31,5 @@ docker rmi ubuntu:20.04
   remove image
 docker rmi prune 
   remove deactive images
+
+docker logs [id] 
