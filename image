@@ -1,7 +1,7 @@
 default storge for images
   /var/lib/docker
 
-images list 
+images list in local 
   docker images
 
 push image to docker hub
