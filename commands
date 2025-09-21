@@ -15,9 +15,14 @@ docker run ubuntu:20.04 echo "run!"
   run container then echo run!
 
 docker run -it ubuntu:20.04 bash
-  -it : intractive terminal
+  -i : having open STDIN - being intractive
+  -t : open a terminal 
   -p 8000:8000 : connect container port to pc port
   -d : run in background
+
+docker run -dit --name myubuntu ubuntu tail -f /dev/null
+  tail -f /dev/null : create infinit loop that makes container never stop
+
 
 docker ps
   running container 
@@ -41,3 +46,6 @@ docker rmi prune
   remove deactive images
 
 docker logs [id] 
+
+
+
