@@ -4,11 +4,11 @@ default storge for images
 
 images list in local 
 
-          docker images
+      docker images
 
 push image to docker hub
 
-        docker push yourname/image-name:lastest
+      docker push yourname/image-name:lastest
       docker tag image-name yourname/image-name:lastest
 
 save/load image to tar
