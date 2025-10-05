@@ -8,9 +8,6 @@ list of avalable images in local
     docker images
     
 
-pulling image
-
-    docker pull ubuntu:20.04
 
 Run image
 
@@ -63,14 +60,7 @@ remove container
 prune diactive containers
 
     docker container prune 
-      
-remove image
 
-    docker rmi ubuntu:20.04
-
-remove deactive images
-
-    docker rmi prune 
       
 
 logs
