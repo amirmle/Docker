@@ -8,6 +8,8 @@ defaul docker file name is Dockerfile
 for diffrent names must use -f tag to decleare docker file 
 docker build -f Dockerfile.dev -t myapp-dev .
 
+---
+
 inside of docker file:
 
 FROM python:3.11-slim
