@@ -6,6 +6,15 @@ images list in local
 
       docker images
 
+remove images without tag
+
+      docker image prune
+
+create new tag for image
+
+      docker tag <IMAGE_ID> <repository>:<tag>
+
+
 push image to docker hub
 
       docker push yourname/image-name:lastest
