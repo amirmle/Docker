@@ -1,0 +1,53 @@
+    version: "3.9"
+    
+    services:
+      app: # conrtainer name
+        build: .
+        container_name: myapp
+        ports:
+          - "8000:8000"
+        environment:
+          - DEBUG=True
+        depends_on:
+          - db
+    
+      db:
+        image: postgres:15
+        container_name: mypostgres
+        environment:
+          - POSTGRES_USER=amir
+          - POSTGRES_PASSWORD=123
+          - POSTGRES_DB=mydb
+        volumes:
+          - pgdata:/var/lib/postgresql/data
+    
+    volumes:
+      pgdata:
+
+### version
+copmpose version - optional after v2
+
+### sevices
+define services - each service , one container
+
+### build
+path of dockerfile to build image
+
+### image 
+name of ready image
+
+### ports
+outter or inner port of container
+
+### enviroment
+enviroment variables - like UESR and PASSWORD
+
+### depends_on
+run order 
+
+### volums 
+where to store or mount files
+
+### network
+
+define custom networks between services
