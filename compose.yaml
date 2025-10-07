@@ -20,6 +20,9 @@
           - POSTGRES_DB=mydb
         volumes:
           - pgdata:/var/lib/postgresql/data
+          or
+          - ./local-data:/data
+          # This means that a local-data folder will be created next to docker-compose.yml on the host system, and anything written to /data in the container will be stored there.
     
     volumes:
       pgdata:
@@ -46,7 +49,7 @@ enviroment variables - like UESR and PASSWORD
 run order 
 
 ### volums 
-where to store or mount files
+volumes name 
 
 ### network
 
