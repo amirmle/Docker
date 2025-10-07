@@ -51,8 +51,7 @@ where to store or mount files
 ### network
 
 define custom networks between services
-
-for host name use sevice name
+for host name use sevice name, like:
 
     conn = psycopg2.connect(
         host='db',
